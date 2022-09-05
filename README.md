@@ -4,7 +4,7 @@ Hello World sample with Java with Maven
 ## Compile
 
 ```
-$ mvn compile
+$ mvn -f inner.directory.gui.remote/pom.xml compile
 ```
 
 ## Test
