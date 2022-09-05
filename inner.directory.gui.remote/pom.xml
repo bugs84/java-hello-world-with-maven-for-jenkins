@@ -9,6 +9,13 @@
   <name>maigolab_hello</name>
   <url>http://maven.apache.org</url>
 
+  <parent>
+    <groupId>cz.vondr.parent.pom</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../parent.in.inner.dir</relativePath>
+  </parent>
+
   <build>
     <plugins>
       <plugin>
@@ -39,7 +46,7 @@
     <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
-      <version>20170516</version>
+      <version>${json.version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/junit/junit -->
