@@ -15,11 +15,13 @@
     <!--    <version>0.0.1-SNAPSHOT</version>-->
     <!--    <relativePath>../parent.in.inner.dir</relativePath>-->
     <!--  </parent>-->
-    <parent>
-        <groupId>de.icongmbh.dopix.development</groupId>
-        <artifactId>de.icongmbh.dopix.development.java</artifactId>
-        <version>7.0.4</version>
-    </parent>
+
+
+<!--    <parent>-->
+<!--        <groupId>de.icongmbh.dopix.development</groupId>-->
+<!--        <artifactId>de.icongmbh.dopix.development.java</artifactId>-->
+<!--        <version>7.0.4</version>-->
+<!--    </parent>-->
 
     <build>
         <plugins>
