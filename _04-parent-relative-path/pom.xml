@@ -2,6 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+      <groupId>de.icongmbh</groupId>
+      <artifactId>de.icongmbh.development</artifactId>
+      <version>2.7.9</version>
+
+      <!-- get parent pom from artifact repository -->
+      <relativePath/>
+    </parent>
+
     <groupId>cz.vondr</groupId>
     <artifactId>parent-relative</artifactId>
     <packaging>jar</packaging>
