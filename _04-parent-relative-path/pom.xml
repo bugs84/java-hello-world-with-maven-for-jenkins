@@ -20,6 +20,10 @@
     <url>http://maven.apache.org</url>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
         <de.icongmbh.grey.product.Compose.version>6.1.0-SNAPSHOT</de.icongmbh.grey.product.Compose.version>
     </properties>
 
@@ -39,11 +43,7 @@
 
     </dependencies>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+
 
 </project>
 
