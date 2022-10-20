@@ -19,6 +19,10 @@
     <name>parent-relative</name>
     <url>http://maven.apache.org</url>
 
+    <properties>
+        <de.icongmbh.grey.product.Compose.version>6.1.0-SNAPSHOT</de.icongmbh.grey.product.Compose.version>
+    </properties>
+
     <build>
 
     </build>
@@ -27,7 +31,8 @@
         <dependency>
             <groupId>de.icongmbh.grey.product</groupId>
             <artifactId>de.icongmbh.grey.product.Compose</artifactId>
-            <version>6.1.0-SNAPSHOT</version>
+<!--            <version>6.1.0-SNAPSHOT</version>-->
+            <version>${de.icongmbh.grey.product.Compose.version}</version>
             <type>pom</type>
 <!--            <scope>import</scope>-->
         </dependency>
