@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-<!--    <groupId>cz.vondr</groupId> Inherited from parent-->
+    <!--    <groupId>cz.vondr</groupId> Inherited from parent-->
     <artifactId>subproject-1</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
@@ -16,25 +16,45 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--        <maven.compiler.source>1.7</maven.compiler.source>-->
-        <!--        <maven.compiler.target>1.7</maven.compiler.target>-->
-        <version.from.parent.pom>1.1.1</version.from.parent.pom>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cz.vondr</groupId>
+                <artifactId>project-with-deps</artifactId>
+                <version>1.0.0</version>
+                <systemPath>${basedir}/../project-with-deps/pom.xml</systemPath>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-<!--                        <version>3.8.1</version> -->
+            <!--This version comes from parent-->
         </dependency>
 
-<!--        <dependency> THIS IS FROM PARENT-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <version>4.13.1</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <!--This version comes from unrelated project dependency management project-with-deps -->
+        </dependency>
+
+        <!--        <dependency> THIS IS FROM PARENT-->
+        <!--            <groupId>junit</groupId>-->
+        <!--            <artifactId>junit</artifactId>-->
+        <!--            <version>4.13.1</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
     </dependencies>
 
 

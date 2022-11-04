@@ -11,8 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--        <maven.compiler.source>1.7</maven.compiler.source>-->
-        <!--        <maven.compiler.target>1.7</maven.compiler.target>-->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
         <version.from.parent.pom>1.1.1</version.from.parent.pom>
     </properties>
 
@@ -28,11 +28,11 @@
 
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.commons</groupId>-->
-<!--            <artifactId>commons-lang3</artifactId>-->
-<!--&lt;!&ndash;            <version>3.8.1</version> &ndash;&gt;-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.commons</groupId>-->
+        <!--            <artifactId>commons-lang3</artifactId>-->
+        <!--&lt;!&ndash;            <version>3.8.1</version> &ndash;&gt;-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
